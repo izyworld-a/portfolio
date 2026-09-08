@@ -1,0 +1,287 @@
+/* ————— Israel Enweji — design system (matches CV brand) ————— */
+:root {
+  --ink: #1a1d26;
+  --body: #383f52;
+  --muted: #5a6072;
+  --soft: #8a90a3;
+  --accent: #2b5ce6;
+  --accent-dark: #1f46c2;
+  --bg: #fafaf8;
+  --card: #ffffff;
+  --line: #e3e6ee;
+  --chip: #eef2fd;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ————— Nav ————— */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(250, 250, 248, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.nav-logo {
+  font-weight: 800;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+/* ————— Hero ————— */
+.hero {
+  padding: 110px 0 90px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.hero-kicker {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 18px;
+}
+.hero h1 {
+  font-size: clamp(38px, 6.5vw, 64px);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  font-weight: 800;
+  margin: 0 0 22px;
+  max-width: 13ch;
+}
+.hero h1 em {
+  font-style: normal;
+  color: var(--accent);
+}
+.hero p {
+  font-size: 18px;
+  max-width: 52ch;
+  margin: 0 0 34px;
+  color: var(--muted);
+}
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.15s;
+  border: 1px solid transparent;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--accent-dark); }
+.btn-ghost {
+  color: var(--ink);
+  border-color: var(--line);
+  background: var(--card);
+}
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ————— Sections ————— */
+.section { padding: 76px 0; }
+.section.alt { background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.section-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+.section h2 {
+  font-size: clamp(26px, 4vw, 36px);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  font-weight: 800;
+  margin: 0 0 40px;
+}
+
+/* ————— Work cards ————— */
+.work-grid { display: grid; gap: 22px; }
+.work-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+}
+.work-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 28px rgba(43, 92, 230, 0.08);
+}
+.work-card.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 28px;
+  align-items: center;
+}
+.work-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--chip);
+  border-radius: 100px;
+  padding: 5px 12px;
+  margin-bottom: 14px;
+}
+.work-card h3 {
+  font-size: 21px;
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 8px;
+}
+.work-card p { margin: 0 0 18px; font-size: 15px; }
+.work-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--chip);
+  padding: 4px 11px;
+  border-radius: 6px;
+}
+.work-links { display: flex; gap: 18px; margin-top: auto; }
+.work-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.work-links a:hover { text-decoration: underline; }
+/* featured visual panel — typographic, no fake screenshots */
+.work-visual {
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: linear-gradient(150deg, #eef2fd 0%, #f7f9ff 55%, #e7edff 100%);
+  min-height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work-visual span {
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--accent);
+  opacity: 0.9;
+}
+
+/* ————— About ————— */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+.about-grid p { margin: 0 0 16px; }
+.about-grid strong { color: var(--ink); }
+.fact-list { list-style: none; margin: 0; padding: 0; }
+.fact-list li {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+  color: var(--ink);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.fact-list li span:last-child { color: var(--muted); text-align: right; }
+
+/* ————— Contact ————— */
+.contact-box {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.contact-box h2 { margin-bottom: 14px; }
+.contact-box p { color: var(--muted); margin: 0 0 30px; font-size: 17px; }
+.email-link {
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.email-link:hover { color: var(--accent); }
+.contact-meta {
+  margin-top: 18px;
+  font-size: 14px;
+  color: var(--soft);
+}
+
+/* ————— Footer ————— */
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 30px 24px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--soft);
+}
+
+/* ————— Responsive ————— */
+@media (max-width: 860px) {
+  .work-card.featured { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; gap: 20px; }
+  .hero { padding: 70px 24px 60px; }
+}
+@media (max-width: 560px) {
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 13px; }
+}
