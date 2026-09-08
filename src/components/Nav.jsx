@@ -3,7 +3,7 @@ export default function Nav() {
     <header className="nav">
       <div className="nav-inner">
         <a className="nav-logo" href="#top">
-          ISRAEL<span>.</span>ENWEJI
+          israel<span>.</span>enweji
         </a>
         <nav className="nav-links">
           <a href="#work">Work</a>
@@ -13,8 +13,9 @@ export default function Nav() {
             href="https://github.com/izyworld-a"
             target="_blank"
             rel="noreferrer"
+            className="nav-gh"
           >
-            GitHub ↗
+            github/izyworld-a ↗
           </a>
         </nav>
       </div>
