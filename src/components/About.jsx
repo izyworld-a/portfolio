@@ -3,7 +3,7 @@ export default function About() {
     <section className="section alt" id="about">
       <div className="container">
         <p className="section-label">About</p>
-        <h2>Engineering → Design → Frontend.</h2>
+        <h2>Engineering → Design → Building.</h2>
         <div className="about-grid">
           <div>
             <p>
@@ -20,18 +20,23 @@ export default function About() {
               components and state the way a developer does.
             </p>
             <p>
-              Right now I build with React, Vite and Firebase, and I'm
-              deepening that practice with every project.
+              These days I build end to end: React frontends, Node.js on
+              Firebase Cloud Functions, Firestore data, third-party APIs
+              like WhatsApp Cloud — designed, built and deployed by me.
             </p>
           </div>
           <ul className="fact-list">
             <li>
               <span>Frontend</span>
-              <span>React · JavaScript · TypeScript · Vite</span>
+              <span>React · TypeScript · JavaScript · Vite</span>
             </li>
             <li>
               <span>Backend</span>
-              <span>Firebase · Node.js · Electron</span>
+              <span>Firebase · Cloud Functions · Node.js</span>
+            </li>
+            <li>
+              <span>Also builds with</span>
+              <span>Electron · PWA · REST APIs</span>
             </li>
             <li>
               <span>Design</span>
