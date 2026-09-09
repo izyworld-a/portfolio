@@ -5,7 +5,7 @@ const projects = [
     badge: "Live · Full-stack",
     flow: ["React + Vite SPA", "Firebase Functions", "WhatsApp Cloud API", "Gemini", "Firestore"],
     description:
-      "The system my accountability team runs on. Members log weekly goals; the platform keeps everyone honest. Reminders and announcements go out over WhatsApp on their own, and when a member replies, a Gemini-powered engine answers them. I built all of it — the React app, the Cloud Functions behind it, and the AI's personality. Deployed and in use right now.",
+      "The system my accountability team runs on. Members log weekly goals; the platform keeps everyone honest. Reminders and announcements go out over WhatsApp on their own, and when a member replies, a Gemini-powered engine answers them. I designed it and shipped it with AI-assisted development — and it's live and in use right now.",
     tags: [
       "React",
       "Vite",
