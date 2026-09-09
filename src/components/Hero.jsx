@@ -22,9 +22,10 @@ export default function Hero() {
           Designer's eye. <em>Builder's hands.</em>
         </h1>
         <p>
-          I design interfaces, then build them myself — front, back, and
-          the WhatsApp bot in between. That's real code up there, from a
-          product my team uses every week.
+          I design interfaces and ship real products end to end — front,
+          back, and the WhatsApp bot in between. I build with AI-assisted
+          development, and I'm learning the JavaScript underneath it, one
+          project at a time.
         </p>
         <div className="hero-actions">
           <a className="btn btn-primary" href="#work">
