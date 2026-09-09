@@ -5,8 +5,8 @@ export default function Contact() {
         <p className="section-label">Contact</p>
         <h2>Let's build something.</h2>
         <p>
-          Open to frontend developer and UI implementation roles, freelance
-          projects, and design collaborations.
+          Looking for a team that needs someone who can design it and build
+          it. Also open to freelance work and one-off builds.
         </p>
         <a className="email-link" href="mailto:Israelenwejii@gmail.com">
           Israelenwejii@gmail.com
