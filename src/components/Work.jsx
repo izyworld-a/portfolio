@@ -5,7 +5,7 @@ const projects = [
     badge: "Live · Full-stack",
     flow: ["React + Vite SPA", "Firebase Functions", "WhatsApp Cloud API", "Gemini", "Firestore"],
     description:
-      "A full-stack team platform, built end to end: weekly goal tracking, live activity feed, and role-based dashboards for members, moderators and admins. The automation layer sends reminders and announcements over WhatsApp, with an AI Q&A engine on Google Gemini answering members directly — Cloud Functions on the backend, Firestore for data, deployed on Firebase Hosting.",
+      "The system my accountability team runs on. Members log weekly goals; the platform keeps everyone honest. Reminders and announcements go out over WhatsApp on their own, and when a member replies, a Gemini-powered engine answers them. I built all of it — the React app, the Cloud Functions behind it, and the AI's personality. Deployed and in use right now.",
     tags: [
       "React",
       "Vite",
@@ -30,7 +30,7 @@ const projects = [
     badge: "freeCodeCamp",
     flow: ["HTML5", "CSS3"],
     description:
-      "Responsive book inventory interface from the freeCodeCamp Responsive Web Design certification.",
+      "A certification project from freeCodeCamp. Small, but hand-built — no frameworks, just honest HTML and CSS.",
     tags: ["HTML5", "CSS3", "Responsive"],
     links: [
       {
@@ -44,7 +44,7 @@ const projects = [
     badge: "freeCodeCamp",
     flow: ["HTML5", "CSS3"],
     description:
-      "A playing cards page from the same certification — semantic HTML and precise CSS layout.",
+      "Another freeCodeCamp build. It looks simple because that is what good CSS layout is supposed to do.",
     tags: ["HTML5", "CSS3"],
     links: [
       {
@@ -98,7 +98,7 @@ export default function Work() {
     <section className="section" id="work">
       <div className="container">
         <p className="section-label reveal">selected work</p>
-        <h2 className="reveal">Designed and built. Shipped and running.</h2>
+        <h2 className="reveal">Things I built that people actually use.</h2>
         <div className="work-grid">
           {projects.map((p) => (
             <Card key={p.title} project={p} />
