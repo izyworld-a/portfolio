@@ -19,23 +19,24 @@ export default function About() {
               does.
             </p>
             <p>
-              These days I build the whole thing: React on the front,
-              Node.js Cloud Functions behind, Firestore underneath, and
-              whatever API the job calls for.
+              These days I ship the whole thing: I design the interface,
+              build it with AI-assisted development — React on the front,
+              Cloud Functions behind, Firestore underneath — and study
+              the JavaScript it generates to write more of it myself.
             </p>
           </div>
           <ul className="fact-list">
             <li>
               <span>Frontend</span>
-              <span>React · TypeScript · JavaScript · Vite</span>
+              <span>HTML · CSS · JavaScript (learning)</span>
             </li>
             <li>
               <span>Backend</span>
-              <span>Firebase · Cloud Functions · Node.js</span>
+              <span>Ships with: Firebase · Cloud Functions</span>
             </li>
             <li>
               <span>Also builds with</span>
-              <span>Electron · PWA · REST APIs</span>
+              <span>AI-assisted full-stack builds</span>
             </li>
             <li>
               <span>Design</span>
