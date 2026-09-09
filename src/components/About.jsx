@@ -7,22 +7,21 @@ export default function About() {
         <div className="about-grid">
           <div>
             <p>
-              I started in <strong>mechatronics engineering</strong>, spent years
-              doing <strong>professional graphic design</strong> — typography,
-              layout, brand identities — and moved into{" "}
-              <strong>frontend development</strong>, because it's where those
-              two worlds meet.
+              I studied <strong>mechatronics engineering</strong>, then spent
+              years as a <strong>graphic designer</strong> — typography,
+              layout, brand work. Frontend development is where those two
+              roads meet, so that's where I set up camp.
             </p>
             <p>
-              My edge is that I designed the Figma file long before I ever
-              translated one into code. I care about spacing, hierarchy and
-              responsiveness the way a designer does — and I think in
-              components and state the way a developer does.
+              I designed Figma files long before I ever translated one into
+              code. So I care about spacing and hierarchy the way a designer
+              does — and I think in components and state the way a developer
+              does.
             </p>
             <p>
-              These days I build end to end: React frontends, Node.js on
-              Firebase Cloud Functions, Firestore data, third-party APIs
-              like WhatsApp Cloud — designed, built and deployed by me.
+              These days I build the whole thing: React on the front,
+              Node.js Cloud Functions behind, Firestore underneath, and
+              whatever API the job calls for.
             </p>
           </div>
           <ul className="fact-list">
